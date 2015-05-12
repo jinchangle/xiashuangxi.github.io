@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 {% include head.html %}
+<div class="container">
+    <div class="page-header">
+        <a href='{{ site.baseurl }}{{ post.url }}'>
+            <h1>{{ post.title }}</h1>
+        </a>{{ post.date| date:"%Y/%m/%d" }}
+    </div>
+    <p class="lead">{{ content }}</p>
+    <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
+</div>
 
-{{ content }}
 <footer class="footer">
     <div class="container">
         <p class="text-muted">xiashuangxi@hotmail.com</p>
