@@ -25,6 +25,6 @@
 </body>
 </html>
 <script>
-    var content = {{ post.content }} ;
+    var content = document.getElementById('page.content').innerHTML;
     document.getElementById('page.content').innerHTML = content.substr(0,50)+'......';
 </script>
