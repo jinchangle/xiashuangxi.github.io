@@ -3,9 +3,8 @@
 {% include head.html %}
 <div class="container">
     <div class="page-header">
-        <a >
-            <h1>{{ page.title }}</h1>
-        </a>{{page.date| date:"%Y/%m/%d" }}
+        <h1>{{ page.title }}</h1>
+        {{page.date| date:"%Y/%m/%d" }}
     </div>
     <p class="lead">{{ content }}</p>
     <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
