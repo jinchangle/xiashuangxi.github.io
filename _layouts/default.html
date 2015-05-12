@@ -1,8 +1,9 @@
----
-layout: head
----
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% include head.html %}
+
+{{ content }}
 <!-- Begin page content -->
-ddddddddddddddddddddddddddddddddddddddd
 {% for post in site.posts %}
     <div class="container">
         <div class="page-header">
@@ -14,6 +15,11 @@ ddddddddddddddddddddddddddddddddddddddd
         <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
     </div>
 {% endfor %}
----
-layout: tail
----
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Place sticky footer content here.</p>
+        </div>
+    </footer>
+
+<body>
+</html>
