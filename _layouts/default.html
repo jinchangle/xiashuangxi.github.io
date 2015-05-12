@@ -12,7 +12,7 @@
                 <h1>{{ post.title }}</h1>
             </a>{{ post.date| date:"%Y/%m/%d" }}
         </div>
-        <p id='page.content' class="lead">{{ post.content }}</p>
+        <p id='page.content' class="lead">{{ post.info }}</p>
         <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
     </div>
 {% endfor %}
@@ -24,7 +24,3 @@
 
 </body>
 </html>
-<script>
-    var content = document.getElementById('page.content').innerHTML;
-    document.getElementById('page.content').innerHTML = content.substr(0,50)+'......';
-</script>
