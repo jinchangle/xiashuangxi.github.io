@@ -5,7 +5,7 @@
 {% include nav_menu.html %}
 {% include banner.html %}
 <!-- Begin page content -->
-{% for post in site.posts %}
+{% for post in paginator.posts %}
     <div class="container">
         <div class="page-header">
             <a href='{{ site.baseurl }}{{ post.url }}'>
