@@ -25,8 +25,8 @@
     {% endif %}
 
 
-{{ paginator.next_page_path }}
-{{ prepend: site.baseurl }}
+{{ paginator.next_page_path }}|
+{{  site.baseurl }}
     {% if paginator.next_page %}
     <a href="{{ site.baseurl }}{{ paginator.next_page_path }}">下一页</a>
     {% endif %}
