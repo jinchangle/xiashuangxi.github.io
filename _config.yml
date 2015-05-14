@@ -1,5 +1,5 @@
 baseurl: .
 encoding: utf-8
 
-paginate: 5
+paginate: 1
 paginate_path: "page:num"
