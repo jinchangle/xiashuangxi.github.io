@@ -31,3 +31,7 @@ body {
   margin: 20px 0;
 }
 */
+
+.head{
+    background : url(/images/head.jpg);
+}
