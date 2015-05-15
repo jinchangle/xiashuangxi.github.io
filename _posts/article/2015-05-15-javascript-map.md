@@ -7,8 +7,6 @@ category: [文章,技术,Javascript]
 summary: "Javascript实现Map结构"
 ---
 ####使用Javascript实现Map结构。
-
-
 ```javascript
 function Map(){
 
@@ -77,8 +75,8 @@ function Map(){
             values[i] = __map__[i].value;
         }
         return values
+        }
     }
-}
 ```
 
 ####实例：
