@@ -14,8 +14,9 @@
         </div>
         <p id='page.content' class="lead">{{ post.summary }}</p>
         <p>
-            <iframe src="http://api.duoshuo.com/threads/counts.json?short_name=xiashuangxi&threads=+{{ post.id }}"></iframe>
-            
+            <iframe src="http://api.duoshuo.com/threads/counts.json?short_name=xiashuangxi&threads=+{{ page.id }}"></iframe>
+            <br>
+            {{ page.id }}
         </p>
     </div>
     <p>
