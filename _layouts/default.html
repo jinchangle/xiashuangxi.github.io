@@ -13,7 +13,7 @@
             </a>{{ post.date| date:"%Y/%m/%d" }}
         </div>
         <p id='page.content' class="lead"></p>
-        <p>Use <a href="../sticky-footer-navbar">字数：{{ post.content | number_of_words }}</p>
+        <p>字数：{{ post.content | number_of_words }}</p>
     </div>
 {% endfor %}
 <div class="container">
