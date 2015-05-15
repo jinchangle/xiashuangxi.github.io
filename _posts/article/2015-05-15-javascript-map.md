@@ -9,7 +9,7 @@ summary: "Javascript实现Map结构"
 ####使用Javascript实现Map结构。
 
 
-```javascript
+
 function Map(){
 
     var __struct__ = function(key,value){
@@ -80,48 +80,46 @@ function Map(){
     }
 }
 
-```
 
 ####实例：
 
-1.创建一个Map对象
+-1.创建一个Map对象
 ```javascript
 var map = new Map();
 ```
-2.在 map 对象里添加一个数据
+-2.在 map 对象里添加一个数据
 ```javascript
 > map.put('1','a');
 > map.put('2','b');  
 > map.put('3','c');
 ```
-3.这个map的大小
+-3.这个map的大小
 ```javascript
 > map.size();
 3
 ```
-4.获取 key = 1 的数据
+-4.获取 key = 1 的数据
 ```javascript
 > map.get('1');
 "a"
 ```
-5.删除 key = 1 的数据
-
+-5.删除 key = 1 的数据
 ```javascript
 > map.remove('1');
 > map.szie();
 2
 ```
-6.查看map对象是否空
+-6.查看map对象是否空
 ```javascript
 > map.isEmpty();
 false
 ```
-7.得到所有的key
+-7.得到所有的key
 ```javascript
 > map.keys();
 ["2", "3"]
 ```
-8.得到所有的values
+-8.得到所有的values
 ```javascript
 > map.values();
 ["b","c"]
