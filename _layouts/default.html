@@ -13,7 +13,12 @@
             </a>{{ post.date| date:"%Y/%m/%d" }}
         </div>
         <p id='page.content' class="lead">{{ post.summary }}</p>
-        <p></p>
+        <p>
+            <script>
+                var api = 'http://api.duoshuo.com/threads/counts.json?short_name=xiashuangxi&threads='+{{ post.id }};
+                alert(api)
+            </script>
+        </p>
     </div>
     <p>
 {% endfor %}
