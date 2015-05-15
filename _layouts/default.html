@@ -12,8 +12,8 @@
                 <h1>{{ post.title }}</h1>
             </a>{{ post.date| date:"%Y/%m/%d" }}
         </div>
-        <p id='page.content' class="lead"></p>
-        <p>字数：{{ post.content | number_of_words }}</p>
+        <p id='page.content' class="lead">{{ post.summary }}</p>
+        <p></p>
     </div>
 {% endfor %}
 <div class="container">
