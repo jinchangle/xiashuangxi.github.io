@@ -8,14 +8,16 @@
     <div class="page-header">
         <h1>{{ page.title }}</h1>
         {{page.date| date:"%Y/%m/%d" }}
+        {% for tag in site.tags %}
+            <a href='#'>{{tag | last | size}}</a>
+        {% endfor %}
     </div>
     <p class="lead">{{ content }}</p>
-    <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
+    <p></p>
 </div>
-
 <footer class="footer">
-    <div class="container">
-        <p class="text-muted">xiashuangxi@hotmail.com</p>
+    <div class="container" style="padding-top:20px">
+        <p class="text-muted">© 2015 xiashuangxi@hotmail.com</p>
     </div>
 </footer>
 
