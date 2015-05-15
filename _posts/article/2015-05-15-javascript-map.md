@@ -8,6 +8,6 @@ summary: "Javascript实现Map结构"
 ---
 ####使用Javascript实现Map结构。
 ```javascript
-var dd = 'ddd';
+        var dd = 'ddd';
 ```
 从CSDN Blog （http://blog.csdn.net/xiashuangxi/article/details/42267157） 迁移。
