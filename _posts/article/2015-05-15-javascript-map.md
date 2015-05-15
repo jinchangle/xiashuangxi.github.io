@@ -105,6 +105,7 @@ var map = new Map();
 "a"
 ```
 5.删除 key = 1 的数据
+
 ```javascript
 > map.remove('1');
 > map.szie();
