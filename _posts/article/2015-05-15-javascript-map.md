@@ -5,6 +5,7 @@ data: 2015-05-15
 tag: [Javascript,算法]
 category: [文章,技术,Javascript]
 summary: "Javascript实现Map结构"
+id: 1
 ---
 ####Javascript实现Map结构。
 
