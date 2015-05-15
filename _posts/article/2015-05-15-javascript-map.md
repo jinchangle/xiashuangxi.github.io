@@ -9,7 +9,7 @@ summary: "Javascript实现Map结构"
 ####使用Javascript实现Map结构。
 
 
-
+```javascript
 function Map(){
 
     var __struct__ = function(key,value){
@@ -79,7 +79,7 @@ function Map(){
         return values
     }
 }
-
+```
 
 ####实例：
 
@@ -133,4 +133,4 @@ false
 public LineData(ArrayList<String> xVals, ArrayList<LineDataSet> sets) { ... }
 ```
 
-So, what is a <code>DataSet</code> and why do you need it? That is actually pretty simple. One <code>DataSet</code> object represents a group of entries (datatype <code>Entry</code>) inside the chart that belong together. It is designed to **logically separate different groups of values in the chart**. For each type of chart, a differnt object that extends `DataSet` (e.g. `LineDataSet`) exists that allows specific styling. 
+So, what is a <code>DataSet</code> and why do you need it? That is actually pretty simple. One <code>DataSet</code> object represents a group of entries (datatype <code>Entry</code>) inside the chart that belong together. It is designed to **logically separate different groups of values in the chart**. For each type of chart, a differnt object that extends `DataSet` (e.g. `LineDataSet`) exists that allows specific styling.
