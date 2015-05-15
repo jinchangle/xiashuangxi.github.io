@@ -82,7 +82,7 @@ function Map(){
 ####实例：
 
 -1.创建一个Map对象
-```javascript
+```Javascript
 var map = new Map();
 ```
 -2.在 map 对象里添加一个数据
