@@ -126,3 +126,11 @@ false
 ```
 
 从CSDN Blog （http://blog.csdn.net/xiashuangxi/article/details/42267157） 迁移。
+
+
+
+```java
+public LineData(ArrayList<String> xVals, ArrayList<LineDataSet> sets) { ... }
+```
+
+So, what is a <code>DataSet</code> and why do you need it? That is actually pretty simple. One <code>DataSet</code> object represents a group of entries (datatype <code>Entry</code>) inside the chart that belong together. It is designed to **logically separate different groups of values in the chart**. For each type of chart, a differnt object that extends `DataSet` (e.g. `LineDataSet`) exists that allows specific styling. 
