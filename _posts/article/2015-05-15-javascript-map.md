@@ -6,7 +6,8 @@ tag: [Javascript,算法]
 category: [文章,技术,Javascript]
 summary: "Javascript实现Map结构"
 ---
-####使用Javascript实现Map结构。
+####Javascript实现Map结构。
+
 ```javascript
 function Map(){
 
@@ -79,4 +80,55 @@ function Map(){
 }
 
 ```
+
+###实例：
+1.创建一个'Map'对象
+```javascript
+var map = new Map();
+```
+
+2.在 'map' 对象里添加一个数据
+```javascript
+map.put('1','a');
+map.put('2','b');  
+map.put('3','c');
+```
+
+3.这个'map'的大小
+```javascript
+map.size();
+3
+```
+
+4.获取 'key = 1' 的数据
+```javascript
+map.get('1');
+"a"
+```
+
+5.删除 'key = 1' 的数据
+```javascript
+map.remove('1');
+map.szie();
+2
+```
+
+6.查看'map'对象是否空
+```javascript
+map.isEmpty();
+false
+```
+
+7.得到所有的'key'
+```javascript
+map.keys();
+["2", "3"]
+```
+
+8.得到所有的'values'
+```javascript
+map.values();
+["b","c"]
+```
+
 从CSDN Blog （http://blog.csdn.net/xiashuangxi/article/details/42267157） 迁移。
