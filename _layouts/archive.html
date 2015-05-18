@@ -8,12 +8,23 @@
             {% for page in site.posts %}
                 {% assign y = page.date | date:'%Y' %}
                 {% if y == year %}
-                    <P>{{page.title}}|Y:{{y}}|Year:{{year}}</p>
+                    <P>TAG:{{year}}</p>
                 {% else %}
                     {% assign year = y %}
-                    <p>Year:{{year}}</p>
+                    <p>TAG:{{year}}</p>
                 {% endif %}
 
+                <div class="container docls">
+                    
+                        <div class="container" style='margin-left: 50px;'>
+                            <p id='page.content' class="lead">
+
+                                    <a href = '{{ post.url }}'>{{ post.title }}</a>
+
+                            </p>
+                        </div>
+                </div>
+                <p>
             {% endfor %}
         </div>
         {% include copyright.html %}
