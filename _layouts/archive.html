@@ -6,15 +6,16 @@
         <div class="container" style='padding-top:50px;'>
             {% assign year = '' %}
             {% for page in site.posts %}
+                <div class="container docls">
                 {% assign y = page.date | date:'%Y' %}
                 {% if y == year %}
-                    
+
                 {% else %}
                     {% assign year = y %}
-                    <p>TAG:{{year}}</p>
+                    <div class="page-header">
+                        <h3 name = "{{year}}">{{year}}</h3>
+                    </div>
                 {% endif %}
-
-                <div class="container docls">
 
                         <div class="container" style='margin-left: 50px;'>
                             <p id='page.content' class="lead">
@@ -23,6 +24,7 @@
 
                             </p>
                         </div>
+                
                 </div>
                 <p>
             {% endfor %}
