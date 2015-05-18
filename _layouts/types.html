@@ -8,8 +8,9 @@
                 {% for category in site.categories %}
                     <a class ="label label-primary" href = '#{{ category | first }}'>{{ category | first }}</a>
                 {% endfor %}
-                <br>
+
             </div>
+            <br>
             {% for category in site.categories %}
             <div class="container docls">
                 <div class="page-header">
