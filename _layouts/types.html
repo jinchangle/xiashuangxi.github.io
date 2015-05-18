@@ -9,11 +9,13 @@
                 <div class="page-header">
                     <h3>{{ category | first }}</h3>
                 </div>
-                <p id='page.content' class="lead">
-                    {% for post in category.last %}
-                        <a href = '{{ post.url }}'>{{ post.title }}</a>
-                    {% endfor %}
-                </p>
+                <div class="container" style='padding-top:50px;'>
+                    <p id='page.content' class="lead">
+                        {% for post in category.last %}
+                            <a href = '{{ post.url }}'>{{ post.title }}</a>
+                        {% endfor %}
+                    </p>
+                </div>
             </div>
             {% endfor %}
         </div>
