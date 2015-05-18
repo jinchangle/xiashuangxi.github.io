@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 {% include head.html %}
-{% include nav_menu.html %}
+
 
     <body>
+        {% include nav_menu.html %}
         <div class="container" style='padding-top:50px;'>
             {% for category in site.categories %}
+            <div class="container docls">
                 <li><a href="#">{{ category | first }}</a></li>
 
                 <div class="container">
@@ -17,6 +19,7 @@
                     <p id='page.content' class="lead">{{ post.summary }}</p>
 
                 </div>
+            </div>
             {% endfor %}
         </div>
         {% include copyright.html %}
