@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% include head.html %}
+    <body>
+        {% include nav_menu.html %}
+        <div class="container" style='padding-top:50px;'>
+            % for category in site.categories %}
+                <li><a href="#">{{ category | first }}</a></li>
+
+                <div class="container">
+                    <div class="page-header">
+                        <a href='{{ site.baseurl }}{{ post.url }}'>
+                            <h1>{{ post.title }}</h1>
+                        </a>{{ post.date| date:"%Y/%m/%d" }}
+                    </div>
+                    <p id='page.content' class="lead">{{ post.summary }}</p>
+
+                </div>
+            {% endfor %}
+        </div>
+        {% include copyright.html %}
+    </body>
+</html>
