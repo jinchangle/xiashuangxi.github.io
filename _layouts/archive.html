@@ -4,7 +4,7 @@
     <body>
         {% include nav_menu.html %}
         <div class="container" style='padding-top:50px;'>
-            {% assign year = '' %}
+            {% assign year = stie.TIME | date:'%Y' %}
             {% for page in site.posts %}
                 {% assign y = page.date | date:'%Y' %}
                 {% if y == year %}
@@ -13,7 +13,7 @@
                     {% assign year = y %}
                     <p>Year:{{year}}</p>
                 {% endif %}
-                
+
             {% endfor %}
         </div>
         {% include copyright.html %}
