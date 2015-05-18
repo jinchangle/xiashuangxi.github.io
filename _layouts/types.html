@@ -3,8 +3,7 @@
 {% include head.html %}
     <body>
         <div class="container" style='padding-top:50px;'>
-            jfal
-            % for category in site.categories %}
+            {% for category in site.categories %}
                 <li><a href="#">{{ category | first }}</a></li>
 
                 <div class="container">
