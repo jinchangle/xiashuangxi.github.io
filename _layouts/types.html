@@ -9,13 +9,15 @@
                 <div class="page-header">
                     <h3>{{ category | first }}</h3>
                 </div>
-                <div class="container" style='margin-left: 50px;background-color:#F5F5F5;margin-bottom: 10px;padding: 10px 10px 10px 10px;'>
-                    <p id='page.content' class="lead">
-                        {% for post in category.last %}
-                            <a href = '{{ post.url }}'>{{ post.title }}</a>
-                        {% endfor %}
-                    </p>
-                </div>
+                {% for post in category.last %}
+                    <div class="container" style='margin-left: 50px;background-color:#F5F5F5;margin-bottom: 10px;padding: 10px 10px 10px 10px;'>
+                        <p id='page.content' class="lead">
+                            
+                                <a href = '{{ post.url }}'>{{ post.title }}</a>
+
+                        </p>
+                    </div>
+                {% endfor %}
             </div>
             {% endfor %}
         </div>
