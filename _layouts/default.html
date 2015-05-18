@@ -10,10 +10,9 @@
         <div class="page-header">
             <a href='{{ site.baseurl }}{{ post.url }}'>
                 <h1>{{ post.title }}</h1>
-            </a>[{{ post.date| date:"%Y/%m/%d" }}]
+            </a>{{ post.date| date:"%Y/%m/%d" }}
         </div>
-        <p id='page.content' class="lead">{{ post.content | truncatewords  }}</p>
-        
+        <p id='page.content' class="lead">{{ post.summary }}</p>
         <p>
             <span class="ds-thread-count badge" data-thread-key="{{post.id}}" data-count-type="comments"></span>
             <!-- 多说js加载开始，一个页面只需要加载一次 -->
