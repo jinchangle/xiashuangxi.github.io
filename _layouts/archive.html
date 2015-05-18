@@ -4,7 +4,7 @@
     <body>
         {% include nav_menu.html %}
         <div class="container" style='padding-top:50px;'>
-            {% for page in site.pages | sort: 'date', 'last'  %}
+            {% for page in site.posts  | sort: 'date', 'last'  %}
             <div class="container docls">
                 <div class="page-header">
                     <h3 name = "{{ category | first }}">{{ page}}</h3>
