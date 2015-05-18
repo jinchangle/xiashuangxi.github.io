@@ -4,12 +4,21 @@
     <body>
         {% include nav_menu.html %}
         <div class="container" style='padding-top:50px;'>
+            {% assign map = []%}
+            {% assign year = '' %}
+            {% assign index = 0 %}
             {% for page in site.posts  | sort: 'date', 'last'  %}
-
-            {% assign y = page.date | date:'%Y' %}
+                {% assign y = page.date | date:'%Y' %}
+                {% if y == year %}
+                    {% map[index] = year %}
+                    {% index  = index+1 %}
+                    {% map[index] = page %}
+                {% else %}
+                    {% year = y %}
+                {% endif %}
             <div class="container docls">
                 <div class="page-header">
-                    <h3 name = "{{ category | first }}">{{ y }}|{{ page.date}}</h3>
+                    <h3 name = "{{ category | first }}">{{ y }}|{{ map }}|{{year}}|{{index}}|{{ page.date}}</h3>
                 </div>
 
             </div>
