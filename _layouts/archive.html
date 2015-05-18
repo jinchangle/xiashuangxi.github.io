@@ -7,6 +7,11 @@
             {% assign year = '' %}
             {% for page in site.posts %}
                 {% assign y = page.date | date:'%Y' %}
+                {% if y == year %}
+                    <P>{{page.title}}</p>
+                {% else %}
+                    {% assign year = y %}
+                {% endif %}
                 <div class="container docls">
                     <div class="page-header">
                         <h3 name = "{{ category | first }}">[{{year}}|{{y}}|{{page.date}}]</h3>
