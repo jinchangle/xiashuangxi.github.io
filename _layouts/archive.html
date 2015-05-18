@@ -9,13 +9,7 @@
             {% assign index = 0 %}
             {% for page in site.posts  | sort: 'date', 'last'  %}
                 {% assign y = page.date | date:'%Y' %}
-                {% if y == year %}
-                    {% map[index] = year %}
-                    {% index  = index+1 %}
-                    {% map[index] = page %}
-                {% else %}
-                    {% year = y %}
-                {% endif %}
+                
                 <div class="container docls">
                     <div class="page-header">
                         <h3 name = "{{ category | first }}">[---------------{{ y }}|{{ map }}|{{year}}|{{index}}]</h3>
