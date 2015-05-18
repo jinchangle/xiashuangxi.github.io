@@ -8,7 +8,7 @@
             {% for page in site.posts %}
                 {% assign y = page.date | date:'%Y' %}
                 {% if y == year %}
-                    <P>{{page.title}}</p>
+                    <P>{{page.title}}|{{y}}</p>
                 {% else %}
                     {% assign year = y %}
                 {% endif %}
