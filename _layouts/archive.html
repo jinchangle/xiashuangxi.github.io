@@ -10,10 +10,11 @@
             {% for page in site.posts  | sort: 'date', 'last'  %}
                 {% assign y = page.date | date:'%Y' %}
                 {% if y == year %}
-                    {% map[index] = year %}
-                    
+                    {% assign map[index] = year %}
+                    {% assign index  = index+1 %}
+                    {% assign map[index] = page %}
                 {% else %}
-                    {% year = y %}
+                    {% assign year = y %}
                 {% endif %}
                 <div class="container docls">
                     <div class="page-header">
