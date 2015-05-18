@@ -5,9 +5,11 @@
         {% include nav_menu.html %}
         <div class="container" style='padding-top:50px;'>
             {% for page in site.posts  | sort: 'date', 'last'  %}
+
+            {% assign y = page.date | '%Y' %}
             <div class="container docls">
                 <div class="page-header">
-                    <h3 name = "{{ category | first }}">{{ page.date}}</h3>
+                    <h3 name = "{{ category | first }}">{{ y }}|{{ page.date}}</h3>
                 </div>
 
             </div>
