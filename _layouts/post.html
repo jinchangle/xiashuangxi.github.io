@@ -14,7 +14,13 @@
         {% endfor %}
     </div>
     <p class="lead">{{ content }}</p>
-    <p>{{page.next.title}}</p>
+    <p></p>
+    <nav>
+      <ul class="pager">
+        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> {{page.next.title}}</a></li>
+        <li class="next"><a href="#">{{page.content.title}} <span aria-hidden="true">&rarr;</span></a></li>
+      </ul>
+    </nav>
 </div>
 <div class="container" style='padding-top:50px;'>
 
