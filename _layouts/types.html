@@ -10,7 +10,9 @@
             <div class="container docls">
                 <div class="page-header">
                     <h3>{{ category | first }}</h3>
-                    <h3>{{ category.last}}[category.last]</h3>
+                    {% for post in category.last %}
+                        {{ post.title }}
+                    {% endfor %}
                 </div>
             </div>
             {% endfor %}
