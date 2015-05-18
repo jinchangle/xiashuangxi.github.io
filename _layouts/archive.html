@@ -4,18 +4,18 @@
     <body>
         {% include nav_menu.html %}
         <div class="container" style='padding-top:50px;'>
-            {% assign year = stie.TIME | date:'%Y' %}
+            {% assign year = '' %}
             {% for page in site.posts %}
                 {% assign y = page.date | date:'%Y' %}
                 {% if y == year %}
-                    <P>TAG:{{year}}</p>
+                    
                 {% else %}
                     {% assign year = y %}
                     <p>TAG:{{year}}</p>
                 {% endif %}
 
                 <div class="container docls">
-                    
+
                         <div class="container" style='margin-left: 50px;'>
                             <p id='page.content' class="lead">
 
