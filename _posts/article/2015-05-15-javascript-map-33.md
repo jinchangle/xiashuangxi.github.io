@@ -3,7 +3,7 @@ layout: post
 title: "Javascript实现Map结构"
 data: 2015-05-15
 tag: [Javascript,算法,技术]
-category: [Javascript]
+category: [Javascript,Java,Python,Go,Html,C,C#,C++,fkasdf,asdfa,sfdasd,fa,sd,f]
 summary: "Javascript实现Map结构"
 ---
 ####Javascript实现Map结构。
