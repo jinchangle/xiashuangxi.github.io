@@ -5,7 +5,7 @@
         {% include nav_menu.html %}
         <div class="container" style='padding-top:50px;'>
 
-            {% for page in site.posts  | where: 'date', '2014'  %}
+            {% for page in site.posts  | where: page.date, '2014'  %}
 
                 <div class="container docls">
                     <div class="page-header">
