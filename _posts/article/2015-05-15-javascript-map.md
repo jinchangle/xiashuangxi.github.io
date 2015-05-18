@@ -2,8 +2,8 @@
 layout: post
 title: "Javascript实现Map结构"
 data: 2015-05-15
-tag: [Javascript,算法]
-category: [文章,技术,Javascript]
+tag: [Javascript,算法,技术]
+category: [Javascript]
 summary: "Javascript实现Map结构"
 ---
 ####Javascript实现Map结构。
