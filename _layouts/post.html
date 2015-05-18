@@ -15,13 +15,14 @@
     </div>
     <p class="lead">{{ content }}</p>
     <p></p>
-    <nav>
-      <ul class="pager">
-        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> {{page.next.title}}</a></li>
-        <li class="next"><a href="#">{{page.content.title}} <span aria-hidden="true">&rarr;</span></a></li>
-      </ul>
-    </nav>
+
 </div>
+<nav>
+  <ul class="pager">
+    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> {{page.content.title}}</a></li>
+    <li class="next"><a href="#">{{page.next.title}} <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
 <div class="container" style='padding-top:50px;'>
 
     <!-- 多说评论框 start -->

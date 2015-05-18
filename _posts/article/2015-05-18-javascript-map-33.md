@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Javascript实现Map结构"
-data: 2015-05-15 10:55
+data: 2015-05-18 13:34
 tag: [Javascript,算法,技术]
-category: [Javascript]
+category: [Javascript,Java,Python,Go,Html,C,C#,C++,fkasdf,asdfa,sfdasd,fa,sd,f]
 summary: "Javascript实现Map结构"
 ---
 ####Javascript实现Map结构。
@@ -90,7 +90,7 @@ var map = new Map();
 2.在 `map` 对象里添加一个数据
 {% highlight javascript %}
 map.put('1','a');
-map.put('2','b');  
+map.put('2','b');
 map.put('3','c');
 {% endhighlight %}
 
