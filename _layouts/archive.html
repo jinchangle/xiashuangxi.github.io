@@ -8,11 +8,11 @@
                     <a class ="label label-primary"></a>
             </div>
             <br>
-            <div class="container docls">
+
             {% assign year = '' %}
             {% assign p = 0 %}
             {% for post in site.posts %}
-
+            <div class="container docls">
                 {% assign y = post.date | date:'%Y' %}
                 {% if y == year %}
                     {% assign p = 1 %}
@@ -28,13 +28,13 @@
                                     <a href = '{{ post.url }}'>{{ post.title }}</a>
                             </p>
                         </div>
-
+                    </div>
+                    p[{{p}}]
+                    {% if p == 1%}
+                    <p>
+                    {% endif %}
             {% endfor %}
-            </div>
-            p[{{p}}]
-            {% if p == 1%}
-            <p>
-            {% endif %}
+
         </div>
         {% include copyright.html %}
     </body>
