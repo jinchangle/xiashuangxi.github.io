@@ -4,11 +4,12 @@
     <body>
         {% include nav_menu.html %}
         <div class="container" style='padding-top:50px;'>
-
-            {% for category in site.categories %}
-                <a class ="label label-primary" href = '#{{ category | first }}'>{{ category | first }}</a>
-            {% endfor %}
-            <br>
+            <div class="container"
+                {% for category in site.categories %}
+                    <a class ="label label-primary" href = '#{{ category | first }}'>{{ category | first }}</a>
+                {% endfor %}
+                <br>
+            </div>
             {% for category in site.categories %}
             <div class="container docls">
                 <div class="page-header">
