@@ -8,18 +8,12 @@
             {% for page in site.posts %}
                 {% assign y = page.date | date:'%Y' %}
                 {% if y == year %}
-                    <P>{{page.title}}|{{y}}|{{year}}</p>
+                    <P>{{page.title}}|Y:{{y}}|Year:{{year}}</p>
                 {% else %}
                     {% assign year = y %}
-                    <p>{{year}}</p>
+                    <p>Year:{{year}}</p>
                 {% endif %}
-                <div class="container docls">
-                    <div class="page-header">
-                        <h3 name = "{{ category | first }}">[{{year}}|{{y}}|{{page.date}}]</h3>
-                    </div>
-
-                </div>
-                <p>
+                
             {% endfor %}
         </div>
         {% include copyright.html %}
