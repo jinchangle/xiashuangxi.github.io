@@ -9,6 +9,7 @@ body {
   margin-bottom: 60px;
   background-color: #F5F5F5;
   line-height:13px;
+  font:normal 14px/24px "STHeiti","Arial","Microsoft Yahei","Hiragino Sans GB","Simsun,sans-self";
 }
 .footer {
   position: absolute;
