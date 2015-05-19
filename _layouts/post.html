@@ -14,7 +14,7 @@
         {{page.date| date:"%Y/%m/%d" }}
 
         {% for tag in page.tags %}
-        <vkbd><a href='#'>{{ tag }}</a></vkbd>
+        <vkbd>{{ tag }}</vkbd>
         {% endfor %}
     </div>
     <p class="lead">{{ content }}</p>
