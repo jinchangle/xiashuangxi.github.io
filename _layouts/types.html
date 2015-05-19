@@ -14,7 +14,7 @@
             {% for category in site.categories %}
             <div class="container docls">
                 <div class="page-header">
-                    <h3 name = "{{ category | first }}">{{ category | first }}</h3>
+                    <h3 id = "{{ category | first }}">{{ category | first }}</h3>
                 </div>
                 {% for post in category.last %}
                     <div class="container" style='margin-left: 50px;'>
