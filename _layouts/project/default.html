@@ -9,7 +9,9 @@
     </div>
     <br>
     <div class="container docls" style="padding-top:100px;">
-        [{{ site.pages }}]
+        {% for post in paginator.posts %}
+            {{ post }}
+        {% endfor %}
         <p style="padding-top:100px;">Project ? Tell me Why ?</p>
     </div>
     <p>
