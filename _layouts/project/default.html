@@ -10,9 +10,10 @@
     <br>
     <div class="container docls" >
         {{site.categories}}
-        {{for post in site.categories}}
+        {%for post in site.categories%}
             {{post.title}}
-        {{endfor}}
+        {%endfor%}
+        {% for post in site.posts %}
 
         <p style="padding-top:100px;">Project ? Tell me Why ?</p>
     </div>
