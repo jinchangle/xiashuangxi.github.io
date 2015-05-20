@@ -9,6 +9,7 @@
     </div>
     <br>
     <div class="container docls" >
+        {{site.categories}}
         {{for post in site.categories}}
             {{post.title}}
         {{endfor}}
