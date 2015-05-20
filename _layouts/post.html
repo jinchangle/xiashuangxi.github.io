@@ -11,7 +11,7 @@
 
     <div class="page-header">
         <h3>{{ page.title }}</h3>
-        <p style='font-size:12px;'>{{page.date| date:"%Y/%m/%d" }}</p>
+        <span style='font-size:12px;'>{{page.date| date:"%Y/%m/%d" }}</span>
         <br>
         {% for tag in page.tags %}
         <vkbd>{{ tag }}</vkbd>
