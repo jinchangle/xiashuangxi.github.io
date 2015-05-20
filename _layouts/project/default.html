@@ -4,12 +4,14 @@
 <body>
     {% include nav_menu.html %}
     <!-- Begin page content -->
-
-    <div class="container docls" style="padding-top:100px;">
-        PS:{{for c in site.categories.project}}
-            {{ c.title }}
-        {{ endffor }}
-
+    <div class="container" style='padding-top:100px;'>
+            <a class ="label label-primary"></a>
+    </div>
+    <br>
+    <div class="container docls" >
+        PS:{{site.categories.project}}
+        CS:{{site.categories}}
+        <p style="padding-top:100px;">Project ? Tell me Why ?</p>
     </div>
     <p>
 
