@@ -9,28 +9,16 @@
         <div class="page-header" style="border-bottom:0px solid #eee;">
             <a href='{{ site.baseurl }}{{ post.url }}'>
                 <h1>{{ post.title }}</h1>
-            </a><p style='font-size:14px;color:#777;'>xiashuangxi&nbsp;|&nbsp;{{ post.date| date:"%Y年%m月%d日" }}</p>
+            </a>
+            <p style='font-size:14px;color:#777;'>
+                xiashuangxi&nbsp;|&nbsp;{{ post.date| date:"%Y年%m月%d日" }}
+            </p>
         </div>
-
-        <p id='page.content' class="lead" style='font-size:16px;'>{{ post.content |strip_html|truncatewords:100}}</p>
-        <hr>
-        <p>
-            <span class="ds-thread-count badge" data-thread-key="{{pdost.id}}" data-count-type="comments"></span>
-            <!-- 多说js加载开始，一个页面只需要加载一次 -->
-            <script type="text/javascript">
-            var duoshuoQuery = {short_name:"xiashuangxi"};
-            (function() {
-                var ds = document.createElement('script');
-                ds.type = 'text/javascript';ds.async = true;
-                ds.src = 'http://static.duoshuo.com/embed.js';
-                ds.charset = 'UTF-8';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-
-            })();
-            </script>
+        <p id='page.content' class="lead" style='font-size:16px;'>
+            {{ post.content |strip_html|truncatewords:100}}
         </p>
+        <hr>
     </div>
-    <p>
 {% endfor %}
 <div class="container">
 <!-- 分页 -->
