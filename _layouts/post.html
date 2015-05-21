@@ -3,11 +3,10 @@
 {% include head.html %}
 <body>
 {% include banner.html %}
-<div class="container docls" >
-
+<div class="container" >
     <div class="page-header">
         <h1 style="text-align:center;">{{ page.title }}</h1>
-        <span style='font-size:14px;color:#777;'>{{ post.date| date:"%Y年%m月%d日" }}</span>
+        <span style='font-size:14px;color:#777;'>{{ page.date| date:"%Y年%m月%d日" }}</span>
         {% for tag in page.tags %}
         <vkbd>{{ tag }}</vkbd>
         {% endfor %}
@@ -15,8 +14,6 @@
     <p id='page.content' class="lead">
         {{ content }}
     </p>
-
-
 </div>
 <div class="container " >
     <nav>
