@@ -6,7 +6,7 @@
 <!-- Begin page content -->
 {% for post in paginator.posts %}
     <div class="container docls">
-        <div class="page-header">
+        <div class="container">
             <a href='{{ site.baseurl }}{{ post.url }}'>
                 <h1>{{ post.title }}</h1>
             </a><p style='font-size:14px;color:#777;'>{{ post.date| date:"%Y/%m/%d" }}</p>
