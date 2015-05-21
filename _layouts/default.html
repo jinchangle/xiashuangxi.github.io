@@ -11,7 +11,9 @@
                 <h1>{{ post.title }}</h1>
             </a><p style='font-size:14px;color:#777;'>{{ post.date| date:"%Y/%m/%d" }}</p>
         </div>
+
         <p id='page.content' class="lead" style='font-size:16px;'>{{ post.content |strip_html|truncatewords:20}}</p>
+        <hr>
         <p>
             <span class="ds-thread-count badge" data-thread-key="{{pdost.id}}" data-count-type="comments"></span>
             <!-- 多说js加载开始，一个页面只需要加载一次 -->
