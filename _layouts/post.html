@@ -3,14 +3,10 @@
 {% include head.html %}
 <body>
 {% include banner.html %}
-<div class="container" style='padding-top:100px;'>
-        <a class ="label label-primary"></a>
-</div>
-<br>
-<div class="container docls" style='padding-top:0px;'>
+<div class="container docls" >
 
     <div class="page-header">
-        <h3>{{ page.title }}</h3>
+        <h3 style="text-align:center;">{{ page.title }}</h3>
         <span style='font-size:12px;'>{{page.date| date:"%Y/%m/%d" }}</span>
         <br>
         {% for tag in page.tags %}
