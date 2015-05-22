@@ -1,13 +1,13 @@
 {% include nav_menu.html %}
 <style id="themecss" type="text/css">
 .banner_bg_image{
-    background-image: url("../../images/test_bg.jpg");
+    background-image: url("../../images/{% if page.image %} {{ page.image }} {% else %} test_bg.jpg {% endif %}");
     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
     -moz-background-size:100% auto;
         background-size:100% auto;
 }
 </style>
-<div class="jumbotron masthead" style="banner_bg_image" >
+<div class="jumbotron masthead {% if page.image %} banner_bg_image {% endif %}">
     <div class="container">
         <h1>心静致远</h1>
         <p>This is the best of times, it was the worst of times.</p>
