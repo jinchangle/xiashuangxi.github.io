@@ -6,14 +6,14 @@
 <!-- Begin page content -->
 {% for post in paginator.posts %}
     <div class="container docls">
-        <div class="page-header" style="border-bottom:0px solid #eee;padding-bottom: 0px; ">
+        <div class="page-header">
             <a href='{{ site.baseurl }}{{ post.url }}'>
                 <h1>{{ post.title }}</h1>
             </a>
 
         </div>
         <p class="lead" >{{ post.content |strip_html|truncate:200}}</p>
-        <p style='font-size:14px;color:#777;'>
+        <p class="tag">
             xiashuangxi&nbsp;|&nbsp;{{ post.date| date:"%Y年%m月%d日" }}
         </p>
         <hr>
