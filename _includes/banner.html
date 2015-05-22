@@ -1,7 +1,7 @@
 {% include nav_menu.html %}
 <style id="themecss" type="text/css">
 .banner_bg_image{
-    background-image: url("images/{% if page.image %}{{ page.image }}{% else %}test_bg.jpg{% endif %}");
+    background-image: url("/images/{% if page.image %}{{ page.image }}{% else %}test_bg.jpg{% endif %}");
     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
     -moz-background-size:100% auto;
         background-size:100% auto;
