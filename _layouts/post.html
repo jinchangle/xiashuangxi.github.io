@@ -14,10 +14,17 @@
     <div class="lead">
         {{ content }}
     </div>
-    <div class="lead">
-        {% if page.previous %}<a href = '{{page.previous.url}}'>{{page.previous.title}}</a>{% endif %}
-        {% if page.next %}<a href = '{{page.next.url}}'>{{page.next.title}}</a>{% endif %}
-    </div>
+    <nav>
+      <ul class="pager">
+          {% if page.previous %}
+            <li class="previous"><a href="{{page.previous.url}}"><span aria-hidden="true">&larr;</span> 上一篇</a></li>
+          {% endif %}
+          {% if page.next %}
+            <li class="next"><a href="{{page.next.url}}">下一篇 <span aria-hidden="true">&rarr;</span></a></li>
+          {% endif %}
+      </ul>
+    </nav>
+    
 </div>
 <div class="container " >
 
