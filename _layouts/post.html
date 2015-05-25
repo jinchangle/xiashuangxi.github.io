@@ -15,12 +15,8 @@
         {{ content }}
     </div>
     <div class="lead">
-        {% if page.previous %}<a href = '{{page.previous.url}}'>上一篇文章</a>{% endif %}
-        {% if page.next %}<a href = '{{page.next.url}}'>下一篇文章</a>{% endif %}
-    </div>
-    <div class="lead">
-        <a href = '{{paginator.next_page_path }}'>下一篇</a>
-        <a href = '{{paginator.previous_page_path}}'>上一篇</a>
+        {% if page.previous %}<a href = '{{page.previous.url}}'>{{page.previous.title}}</a>{% endif %}
+        {% if page.next %}<a href = '{{page.next.url}}'>{{page.next.title}}</a>{% endif %}
     </div>
 </div>
 <div class="container " >
