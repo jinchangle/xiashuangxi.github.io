@@ -133,7 +133,7 @@ a:focus,a:hover {
 .categorytag{
 	padding:10px 10px 10px 10px;
 	}
-.categorytag .count{
+.categorytag .badge{
 	background: #F0F0F0;
 	}
 }
