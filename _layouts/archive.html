@@ -5,7 +5,6 @@
         {% include banner.html %}
         <div class="container">
             {% assign year = '' %}
-            {% assign p = 0 %}
             {% for post in site.posts %}
                 <div class="container docls">
                 {% assign y = post.date | date:'%Y' %}
@@ -15,7 +14,7 @@
                     {% assign year = y %}
                     {% assign p = 0 %}
                     <div class="page-header">
-                        <h3 name = "{{year}}">{{year}}</h3>
+                        <h1 name = "{{year}}">{{year}}</h1>
                     </div>
                 {% endif %}
                         <div class="container" style='margin-left: 50px;'>
@@ -25,9 +24,6 @@
                             </p>
                         </div>
                     </div>
-                    {% if p == 0%}
-                    <p>
-                    {% endif %}
             {% endfor %}
         </div>
         {% include copyright.html %}
