@@ -4,23 +4,24 @@
     <body>
         {% include banner.html %}
         <div class="container">
-            {{site.categories}}
-            {% for category in site.categories %}
+            
+            
             <div class="container docls">
                 <div class="page-header">
-                    <h3 id = "{{ category | first }}">{{ category | first }}</h3>
+                    <h3 id = "{{ category | first }}">分类</h3>
                 </div>
-                {% for post in category.last %}
-                    <div class="container" style='margin-left: 50px;'>
-                        <p id='page.content' class="lead">
-                                <a href = '{{ post.url }}'>{{ post.title }}</a>
-                                <span style="font-size:12px;margin-left: 20px;font-style:italic;">{{ post.date | date:"%Y/%m/%d %H:%M"}}</span>
+                {% for category in site.categories %}
+                
+                    <div class="container" >
+                        <p class="lead">
+                            {{ category | last | size }}    
                         </p>
                     </div>
+                
                 {% endfor %}
             </div>
             
-            {% endfor %}
+            
         </div>
         {% include copyright.html %}
     </body>
