@@ -129,3 +129,11 @@ a:focus,a:hover {
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
+
+.categorytag{
+	padding:10px 10px 10px 10px;
+	}
+.categorytag .count{
+	background: #ccc;
+	}
+}
