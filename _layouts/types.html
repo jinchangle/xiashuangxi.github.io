@@ -12,8 +12,8 @@
                 </div>
                 <div class="container" >
                      {% for category in site.categories %}
-                         <span class="lead">
-                           {{ category | first }} {{ category | last | size }}    
+                         <span class="lead categorytag ">
+                           {{ category | first }} <span class = "count">{{ category | last | size }}</span>    
                         </span>
                     {% endfor %}
                 </div>
@@ -25,8 +25,8 @@
                 </div>
                 <div class="container" >
                      {% for tag in site.tags %}
-                         <span class="lead">
-                           {{ tag | first }} {{ tag | last | size }}    
+                         <span class="lead categorytag">
+                           {{ tag | first }} <span class = "count">{{ tag | last | size }}</span>
                         </span>
                     {% endfor %}
                 </div>
