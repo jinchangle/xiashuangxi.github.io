@@ -10,15 +10,13 @@
                 <div class="page-header">
                     <h3 id = "{{ category | first }}">分类</h3>
                 </div>
-                {% for category in site.categories %}
-                
-                    <div class="container" >
-                        <span class="lead">
+                <div class="container" >
+                     {% for category in site.categories %}
+                         <span class="lead">
                            {{ category | first }} {{ category | last | size }}    
                         </span>
-                    </div>
-                
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
             
             
