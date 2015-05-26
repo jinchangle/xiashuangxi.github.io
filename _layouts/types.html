@@ -4,6 +4,7 @@
     <body>
         {% include banner.html %}
         <div class="container">
+            {{site.categories}}
             {% for category in site.categories %}
             <div class="container docls">
                 <div class="page-header">
