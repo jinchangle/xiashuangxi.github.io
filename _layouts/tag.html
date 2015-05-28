@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% include head.html %}
+    <body>
+        {% include banner.html %}
+            <div class="container docls">
+                <div class="page-header">
+                    <h1>标签 : {{ page.tag }}</h1>
+                </div>
+                <div class="container" >
+                     {% for tag in site.tags[page.tag] %}
+                         <span class="lead categorytag">
+                            <a href="#">{{ tag | first }}</a> <span class = "badge">{{ tag | last | size }}</span>
+                        </span>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+        {% include copyright.html %}
+    </body>
+</html>
