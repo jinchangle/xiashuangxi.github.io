@@ -4,8 +4,8 @@
     <body>
         {% include banner.html %}
         <div class="container">
-            
-            
+
+
             <div class="container docls">
                 <div class="page-header">
                     <h1>分类</h1>
@@ -13,12 +13,12 @@
                 <div class="container" >
                      {% for category in site.categories %}
                          <span class="lead categorytag ">
-                           <a href="#">{{ category | first }}</a> <span class = "badge">{{ category | last | size }}</span>    
+                           <a href="/blog/category/{{ category | first }}/">{{ category | first }}</a> <span class = "badge">{{ category | last | size }}</span>
                         </span>
                     {% endfor %}
                 </div>
             </div>
-            
+
             <div class="container docls">
                 <div class="page-header">
                     <h1>标签</h1>
@@ -26,12 +26,12 @@
                 <div class="container" >
                      {% for tag in site.tags %}
                          <span class="lead categorytag">
-                            <a href="#">{{ tag | first }}</a> <span class = "badge">{{ tag | last | size }}</span>
+                            <a href="/blog/tag/{{ tag | first }}/">{{ tag | first }}</a> <span class = "badge">{{ tag | last | size }}</span>
                         </span>
                     {% endfor %}
                 </div>
             </div>
-            
+
         </div>
         {% include copyright.html %}
     </body>
