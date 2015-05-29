@@ -45,4 +45,17 @@
         s.parentNode.insertBefore(hm, s);
       })();
     </script>
+    
+    <style id="themecss" type="text/css">
+        .banner_bg_image{
+            background-image: url("/images/{% if page.image %}{{ page.image }}{% else %}test_bg.jpg{% endif %}");
+            filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+            -moz-background-size:100% auto;
+                background-size:100% auto;
+           /*
+              padding-top: 10em;
+              height:25em;
+            */
+        }
+    </style>
 </head>
