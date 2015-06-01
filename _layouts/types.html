@@ -24,7 +24,7 @@
                     <h1>标签</h1>
                 </div>
                 <div class="container" >
-                     {% for tag in site.tags %}
+                     {% for tag in site.data.tags %}
                          <span class="lead categorytag">
                             <a href="/blog/tag/{{ tag | first }}/">{{ tag | first }}</a> <span class = "badge">{{ tag | last | size }}</span>
                         </span>
