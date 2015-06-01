@@ -24,7 +24,6 @@
                 <div class="container" >
                      {% for tag in site.tags %}
                          <span class="lead categorytag">
-                             {{ tag }}
                             <a href="/blog/tag/{{ tag | first }}/">{{ tag | first }}</a> <span class = "badge">{{ tag | last | size }}</span>
                         </span>
                     {% endfor %}
