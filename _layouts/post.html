@@ -6,8 +6,7 @@
 <div class="container" >
     <div class="page-header">
         <h1 style="text-align:center;">{{ page.title }}</h1>
-        <span class="tag">{{ page.date| date:"%Y年%m月%d日" }}</span>
-        |
+        <span class="tag">{{ page.date| date:"%Y年%m月%d日" }} | </span>
         {% for tag in page.tags %}
         <vkbd><a href='/blog/tag/{{tag}}/'>{{ tag }}</a></vkbd>
         {% endfor %}
