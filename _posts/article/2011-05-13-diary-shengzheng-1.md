@@ -2,7 +2,7 @@
 layout: post
 title: "深圳游记-1"
 date: 2011-05-13 10:55
-tag: [杂谈,日记]
+tag: [日记]
 category: [随记]
 image: diary.jpg
 ---
