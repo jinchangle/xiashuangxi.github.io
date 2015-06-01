@@ -26,7 +26,7 @@
                 <div class="container" >
                      {% for tag in site.data.tags %}
                          <span class="lead categorytag">
-                            <a href="/blog/tag/{{ tag | first }}/">{{ tag.name | first }}</a> <span class = "badge">{{ tag.name | last | size }}</span>
+                            <a href="/blog/tag/{{ tag }}/">{{ tag.name }}</a> <span class = "badge">{{ tag.name | size }}</span>
                         </span>
                     {% endfor %}
                 </div>
