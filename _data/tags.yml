@@ -4,11 +4,36 @@
 - slug: 日记
   name: 日记
 
-- slug: 管理
-  name: 管理
+- slug: 刑法
+  name: 刑法
+  
+- slug: 合同法
+  name: 合同法
+  
+- slug: 自由行
+  slug: 自由行
+
+- slug: 时间管理
+  name: 时间管理
+  
+- slug: 项目管理
+  name: 项目管理
   
 - slug: 手工
   name: 手工
   
 - slug: 美食
   name: 美食
+
+- slug: 国内读物
+  name: 国内读物
+  
+- slug: 国外读物
+  name: 国外读物
+  
+- slug: 小说
+  name: 小说
+  
+- slug: 文学
+  name: 文学
+  
