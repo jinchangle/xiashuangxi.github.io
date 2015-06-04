@@ -52,12 +52,27 @@ filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')
 		height:10em;
 	}
 	
+	.jumbotron-full{
+		padding-top: 20em;
+		height:50em;
+	}
+	
 }
 
 @media(min-width:992px){
 	.jumbotron{
 		padding-top: 10em;
 		height:25em;
+	}
+	
+	.jumbotron-min{
+		padding-top: 1em;
+		height:10em;
+	}
+	
+	.jumbotron-full{
+		padding-top: 20em;
+		height:50em;
 	}
 	
 }
@@ -67,6 +82,17 @@ filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')
 		padding-top: 15em;
 		height:30em;
 	}
+	
+	.jumbotron-min{
+		padding-top: 1em;
+		height:10em;
+	}
+	
+	.jumbotron-full{
+		padding-top: 20em;
+		height:50em;
+	}
+	
 }
 
 .docls{
