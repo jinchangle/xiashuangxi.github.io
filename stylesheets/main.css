@@ -47,6 +47,11 @@ filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')
 		height:15em;
 	}
 	
+	.jumbotron-min{
+		padding-top: 1em;
+		height:10em;
+	}
+	
 }
 
 @media(min-width:992px){
