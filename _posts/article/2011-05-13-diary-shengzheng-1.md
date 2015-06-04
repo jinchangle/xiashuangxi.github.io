@@ -5,6 +5,7 @@ date: 2011-05-13 10:55
 tag: [日记]
 category: [随记]
 image: diary.jpg
+bannersize: min
 ---
 2011年的5月8号是我的第一次来到深圳这座年青的城市。
 
