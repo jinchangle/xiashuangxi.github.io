@@ -4,6 +4,7 @@ title: "深圳游记-1"
 date: 2011-05-13 10:55
 tag: [日记]
 category: [随记]
+banner: full
 image: diary.jpg
 ---
 2011年的5月8号是我的第一次来到深圳这座年青的城市。
