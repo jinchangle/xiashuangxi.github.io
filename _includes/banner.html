@@ -1,12 +1,7 @@
 {% include nav_menu.html %}
 
 {% if page.banner-height %}
-    {% if page.banner-height = "full" %}
-        <div class="jumbotron-full masthead banner_bg_image">
-    {% endif %}
-    {% if page.banner-height = "min" %}
         <div class="jumbotron-min masthead banner_bg_image">
-    {% endif %}
 {% else %}
     <div class="jumbotron masthead banner_bg_image">
 {% endif %}
