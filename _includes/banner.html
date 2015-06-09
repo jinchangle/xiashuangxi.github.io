@@ -1,5 +1,16 @@
 {% include nav_menu.html %}
-<div class="jumbotron masthead banner_bg_image">
+
+{% if page.banner-height %}
+    {% if page.banner-height = "full" %}
+        <div class="jumbotron-full masthead banner_bg_image">
+    {% elseif page.banner-height = "min" %}
+        <div class="jumbotron-min masthead banner_bg_image">
+    {% else %}
+        <div class="jumbotron masthead banner_bg_image">
+    {% endif %}
+{% else %}
+    <div class="jumbotron masthead banner_bg_image">
+{% endif %}
     <div class="container">
         <h1>{{ site.data.center.title }} [  {{ page.image }} | {{ page.banner-height }}]</h1>
         <p>{{ site.data.center.title_sentence }}</p>
